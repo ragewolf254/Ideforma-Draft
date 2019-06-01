@@ -1,13 +1,22 @@
 <template>
-  <HelloWorld />
+  <div style="background-color: #fefefe">
+    <Achievements/>
+    <Core/>
+    <Footer/>
+  </div>
+  
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+import Footer from '@/components/Footer/Footer'
+import Core from '@/components/OurCore/Core'
+import Achievements from '@/components/Achievements/Achievements'
 
-  export default {
-    components: {
-      HelloWorld
-    }
+export default {
+  components: {
+    Footer,
+    Core,
+    Achievements
   }
+}
 </script>
